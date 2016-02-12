@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Water</title>
+ 
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<link href="static/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/3.4.1/octicons.min.css">
+<link href='//fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+
+
+
+</head>
+<body id="page-top" class="landing-page no-skin-config">
+<div class="navbar-wrapper">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="/">
+                        <!-- <img src="{{ STATIC_URL }}img/logo_white.png" style='height:30px;margin-top:20px' id='header_logo_white'> -->
+                        Logo Here
+                    </a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="">Home</a></li>
+                        <li><a href="#howitworks">How It Works</a></li>
+                        <li><a href="">Purchase</a></li>
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#ourtests">Our Tests</a></li>
+<!--                         <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Testing Packs <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="" class='navbar-dropdown'>Overview</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="" class='navbar-dropdown'>Home Basic</a></li>
+                            <li><a href="" class='navbar-dropdown'>Home Extended</a></li>
+                            <li><a href="" class='navbar-dropdown'>Brew Master</a></li>
+                            <li><a href="" class='navbar-dropdown'>Well Water</a></li>
+                          </ul>
+                        </li> -->
+                        <li>
+                            <a href="/accounts/login">
+                            <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
+                            Sign In</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+</div>
+
+<div id="inSlider">
+        <div class="item active front-header">
+            <div class="container">
+                <div class='head-text'>
+                    <h1>The Best Way  <br/>
+                        to Test Your Drinking Water</h1>
+                    <p>Manage, Create, and Keep track of your <br/> physician arrangements</p>
+                </div>
+                <div class="wow zoomIn">
+
+                </div>
+            </div>
+        </div>
+</div>
+
+
+<section id="features" class="container services" style='padding:175px 0px 100px 0px'>
+    <div class="row text-center" id='benefit-main'>
+        <h1>Make sure your drinking water is safe</h1>
+        <div>Explain here why to get water tested</div>
+    </div>
+
+    <div class="row" style='padding:100px 0px 50px 0px'>
+        <div class="col-lg-12 text-center">
+            <div class="navy-line"></div>
+            <h1>Try Us Out!</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4 product-outline">
+            <i class='ion-ios-flask-outline'></i>
+            <h2>Accurate</h2>
+            <p>Our tests are conducted in state of the art facilities - not in the bathroom you've been meaning to clean for weeks.</p>
+            <p><a class="navy-link" href="{% url 'products_contractmanager' %}" role="button">Details &raquo;</a></p>
+        </div>
+        <div class="col-sm-4 product-outline">
+            <i class='ion-ios-sunny-outline'></i>
+            <h2>Simple</h2>
+            <p>Just send in your water, and in a few days you will have insight into what's inside it.  No need to schedule an appointment and wait home all day for a lab tech to show up</p>
+            <p><a class="navy-link" href="{% url 'products_timetracker' %}" role="button">Details &raquo;</a></p>
+        </div>
+        <div class="col-sm-4 product-outline">
+            <i class='ion-ios-navigate-outline'></i>
+            <h2>Reliable</h2>
+            <p>We are fully independent and won't try to upsell you if your water turns out to be contaminated.</p>
+            <p><a class="navy-link" href="{% url 'products_analytics' %}" role="button">Details &raquo;</a></p>
+        </div>
+    </div>
+</section>
+
+<div class='divider'></div>
+
+<section id="whytestwater" class="gray-section whytestwater">
+    <div class="container">
+        <div class="row m-b-lg">
+            <div class="col-lg-12 text-center">
+                <h1>Water Is An Important Part of Our Lives</h1>
+            </div>
+        </div>
+
+    <div class="row" style='padding:40px 0px'>
+        <div class="col-sm-4">
+            <h2><i class="fa fa-circle-o"></i> Simplicity</h2>
+            <p>We strive to make everything we do as simple as possible for our customers.  Our products are designed to be user friendly—we believe that the best software is software that people will enjoy using.  By keeping things simple and intuitive, users can achieve more in less time.  We truly carry this philosophy through everything we do- from design, to pricing, to contract negotiation.</p>
+        </div>
+        <div class="col-sm-4">
+            <h2><i class="fa fa-lock"></i> Security</h2>
+            <p>Our phone and web applications are built with the highest security standards in mind. As a HIPAA compliant SAAS solution, we offer 256bit SSL end to end security.  By delivering all of our data in a secure way, you don’t have to worry about data breaches and can sleep peacefully at night. </p>
+        </div>
+        <div class="col-sm-4">
+            <h2><i class="fa fa-database"></i> Cutting Edge Technology</h2>
+            <p>When it comes down to it, we are a technology company. We strive to provide the best tech product on the market by utilizing up to date technologies. This also means our software is fast, scalable, and backedup.  In fact, we built Baldur Healthcare on Amazon AWS – a service that both NASA and Netflix use. </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4">
+            <h2><i class="fa fa-usd"></i> Cost Effective</h2>
+            <p>The current state of healthcare is one filled with cost pressures.  We provide a top notch healthcare compliance solution that can fit in any budget.</p>
+        </div>
+        <div class="col-sm-4">
+            <h2><i class="fa fa-user-md"></i> 100% Healthcare Focused</h2>
+            <p>While other solutions may be able to solve similar problems after costly, extensive customization, our solution is built 100% for healthcare and is HIPAA compliant.</p>
+        </div>
+        <div class="col-sm-4">
+            <h2><i class="fa fa-puzzle-piece"></i> Adaptive</h2>
+            <p>Software moves fast, and Baldur Healthcare is built on the latest technology.  With the latest technology, we can quickly adapt to changing customer needs and quickly release new features.</p>
+        </div>
+    </div>
+
+        <div class='row features-block text-center m-b-lg p-lg-text' style='margin-top: 125px;'>
+            Like what we have to say?  Reach out to us <a href="{% url 'contact' %}">here</a>
+        </div>
+
+    </div>
+</section>
+
+<div class='divider'></div>
+<!-- begin reviews section -->
+<section class="howitworks" id="howitworks">
+  <div class="container ">
+    
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-head wow fadeIn animated text-center" data-wow-offset="10" data-wow-duration="1.5s">
+          <h1>How it Works</h1>
+          <p>The process in 4 easy steps</p>
+          <span class="underline"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+
+        <!-- begin single  workstep item -->
+        <div class="workstep row wow fadeInUp animated" data-wow-offset="10" data-wow-duration="1s" >
+          <div class="col-md-1">
+            <div class="circlenum">
+              1
+            </div>
+          </div>
+
+          <div class='col-md-9 workstep-text'>
+                <h3 class="media-heading">Select A Package</h3>
+                Browse our expert community to find the right fit for you. Select experts based on pedigree, background, and community reviews.
+          </div>
+          <div class='col-md-2'>
+                <span class="ion-compose" style='font-size:9em'></span>
+          </div>
+        </div>
+        <!-- end single  workstep item -->
+
+        <hr>
+
+        <!-- begin single  workstep item -->
+        <div class="workstep row wow fadeInUp animated" data-wow-offset="10" data-wow-duration="1s" >
+          <div class="col-md-1">
+            <div class="circlenum">
+              2
+            </div>
+          </div>
+
+          <div class='col-md-9 workstep-text'>
+                <h3 class="media-heading">Recieve the Testing Package</h3>
+                Share your objectives with the expert. Select 3 dates and times that work best for your schedule.  
+          </div>
+          <div class='col-md-2'>
+                <span class="mega-octicon octicon-package" style='font-size:9em'></span>
+          </div>
+        </div>
+        <!-- end single  workstep item -->
+
+        <hr>
+
+
+        <!-- begin single  workstep item -->
+        <div class="workstep row wow fadeInUp animated" data-wow-offset="10" data-wow-duration="1s" >
+          <div class="col-md-1">
+            <div class="circlenum">
+              3
+            </div>
+          </div>
+
+          <div class='col-md-9 workstep-text'>
+                <h3 class="media-heading">Fill Bottle and Send Back</h3>
+                A unique conference line number will be provided via email.  Call in at the scheduled time.  Pay, rate and review the expert.  
+          </div>
+          <div class='col-md-2'>
+                <span class="ion-soup-can-outline" style='font-size:9em'></span>
+          </div>
+        </div>
+        <!-- end single  workstep item -->
+
+        <hr>
+
+
+        <!-- begin single  workstep item -->
+        <div class="workstep row wow fadeInUp animated" data-wow-offset="10" data-wow-duration="1s" >
+          <div class="col-md-1">
+            <div class="circlenum">
+              4
+            </div>
+          </div>
+
+          <div class='col-md-9 workstep-text'>
+                <h3 class="media-heading">Check Results Online</h3>
+                A unique conference line number will be provided via email.  Call in at the scheduled time.  Pay, rate and review the expert.  
+          </div>
+          <div class='col-md-2'>
+                <span class="ion-monitor" style='font-size:9em'></span>
+          </div>
+        </div>
+        <!-- end single  workstep item -->
+
+        
+    </div>
+
+  </div>  
+</section>
+<!-- end reviews section -->
+
+
+<div class='divider'></div>
+
+<section class="packages" id="packages">
+    
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-head wow fadeIn animated animated" data-wow-offset="10" data-wow-duration="1.5s" style="visibility: visible; animation-duration: 1.5s; animation-name: fadeIn;">
+                    <h1>Packages</h1>
+                    <span class="underline"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row wow bounceIn animated animated" data-wow-offset="10" data-wow-duration="1.5s" style="visibility: visible; animation-duration: 1.5s; animation-name: bounceIn;">
+            
+            <div class="col-md-4 col-sm-6">
+                <!-- begin single package -->
+                <div class="package">
+                    <div class="package-name">
+                        <h4>Basic Home Package</h4>
+                    </div>
+                    <span class="package-price">$39</span>
+                    <div class="underline-small"></div>
+                    <div class="package-features">
+                        <ul>
+                            <li class='package-active'>Lead</li>
+                            <li>Bacteria (Coliform)</li>
+                            <li class='package-active'>Calcium</li>
+                            <li class='package-active'>Nitrates</li>
+                            <li>Nitrites</li>
+                            <li class='package-active'>pH</li>
+                            <li class='package-active'>Turbidity</li>
+                            <li>Alkalinity</li>
+                            <li> Bacteria (EColi)</li>
+                            <li>Chloride</li>
+                            <li>Copper</li>
+                            <li>Flouride</li>
+                            <li>Hardness</li>
+                            <li>Iron</li>
+                            <li>Manganese</li>
+                            <li>Magnesium</li>
+                            <li>Pesticides</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-primary">
+                        <i class="fa fa-shopping-cart"></i>
+                        Order
+                    </a>
+                </div>
+                <!-- end single package -->
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <!-- begin single package -->
+                <div class="package">
+                    <div class="package-name">
+                        <h4>Extended Home Package</h4>
+                    </div>
+                    <span class="package-price">$59</span>
+                    <div class="underline-small"></div>
+                    <div class="package-features">
+                        <ul>
+                            <li class='package-active'>Lead</li>
+                            <li>Bacteria (Coliform)</li>
+                            <li class='package-active'>Calcium</li>
+                            <li class='package-active'>Nitrates</li>
+                            <li class='package-active'>Nitrites</li>
+                            <li class='package-active'>pH</li>
+                            <li class='package-active'>Turbidity</li>
+                            <li>Alkalinity</li>
+                            <li> Bacteria (EColi)</li>
+                            <li>Chloride</li>
+                            <li class='package-active'>Copper</li>
+                            <li class='package-active'>Flouride</li>
+                            <li class='package-active'>Hardness</li>
+                            <li>Iron</li>
+                            <li>Manganese</li>
+                            <li class='package-active'>Magnesium</li>
+                            <li>Pesticides</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-primary">
+                        <i class="fa fa-shopping-cart"></i>
+                        Order
+                    </a>
+                </div>
+                <!-- end single package -->
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <!-- begin single package -->
+                <div class="package featured">
+                    <div class="package-name">
+                        <h4>Ultimate Home Package</h4>
+                    </div>
+                    <span class="package-price">$99</span>
+                    <div class="underline-small"></div>
+                    <div class="package-features">
+                        <ul>
+                            <li class='package-active'>Lead</li>
+                            <li class='package-active'>Bacteria (Coliform)</li>
+                            <li class='package-active'>Calcium</li>
+                            <li class='package-active'>Nitrates</li>
+                            <li class='package-active'>Nitrites</li>
+                            <li class='package-active'>pH</li>
+                            <li class='package-active'>Turbidity</li>
+                            <li class='package-active'>Alkalinity</li>
+                            <li class='package-active'> Bacteria (EColi)</li>
+                            <li class='package-active'>Chloride</li>
+                            <li class='package-active'>Copper</li>
+                            <li class='package-active'>Flouride</li>
+                            <li class='package-active'>Hardness</li>
+                            <li class='package-active'>Iron</li>
+                            <li class='package-active'>Manganese</li>
+                            <li class='package-active'>Magnesium</li>
+                            <li class='package-active'>Pesticides</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-primary">
+                        <i class="fa fa-shopping-cart"></i>
+                        Order
+                    </a>
+                </div>
+                <!-- end single package -->
+            </div>
+
+
+        </div>
+
+    </div>
+</section>
+
+
+<div class='divider'></div>
+
+
+    <!-- Features -->
+    <section id="ourtests" class="section">
+        <div class="container">
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="section-head wow fadeIn animated text-center" data-wow-offset="10" data-wow-duration="1.5s">
+                  <h1>What We Test For</h1>
+                  <span class="underline"></span>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-4 col-sm-4 test"><!-- Start Feature -->
+                    <span class='chem-element'>
+                        <span class='element-symbol'>
+                        Pb
+                        </span>
+                        <span class='element-num'>14</span>
+                    </span>
+                    <h3>Lead</h3><!-- Feature Title -->
+                    <p>Nullam mo  arcu ac molestie scelerisqu vulputate molestie mpus ipsum.</p><!-- Feature Text -->
+                </div><!-- End Feature -->
+                <div class="col-md-4 col-sm-4 test">
+                    <span class='chem-element'>
+                        <span class='element-symbol sm-sym'>Coli
+                        </span>
+                    </span>
+                    <h3>Bacteria (Coliform)</h3>
+                    <p>Nullam mo  arcu ac molestie scelerisqu vulputate molestie mpus ipsum.</p>
+                </div>
+                <div class="col-md-4 col-sm-4 test">
+                    <span class='chem-element'>
+                        <span class='element-symbol'>
+                        Ca
+                        </span>
+                        <span class='element-num'>20</span>
+                    </span>
+                    <h3>Calcium</h3>
+                    <p>Nullam mo  arcu ac molestie scelerisqu vulputate molestie mpus ipsum.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-4 test">
+                    <span class='chem-element'>
+                        <span class='element-symbol'>NO<sub>3</sub><sup>-</sup>
+                        </span>
+                    </span>
+                    <h3>Nitrates</h3>
+                    <p>Nullam mo  arcu ac molestie scelerisqu vulputate molestie mpus ipsum.</p>
+                </div>
+                <div class="col-md-4 col-sm-4 test">
+                     <span class='chem-element'>
+                        <span class='element-symbol'>NO<sub>2</sub><sup>-</sup>
+                        </span>
+                    </span>
+                    <h3>Nitrites</h3>
+                    <p>Nullam mo  arcu ac molestie scelerisqu vulputate molestie mpus ipsum.</p>
+                </div>
+                <div class="col-md-4 col-sm-4 test">
+                    <span class='chem-element'>
+                        <span class='element-symbol'>pH
+                        </span>
+                    </span>
+                    <h3>pH</h3>
+                    <p>Nullam mo  arcu ac molestie scelerisqu vulputate molestie mpus ipsum.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-4 test">
+                    <span class='chem-element'>
+                        <span class='element-symbol sm-sym'>Turb
+                        </span>
+                    </span>
+                    <h3>Turbidity</h3>
+                    <p>Nullam mo  arcu ac molestie scelerisqu vulputate molestie mpus ipsum.</p>
+                </div>
+                <div class="col-md-4 col-sm-4 test">
+                    <span class='chem-element'>
+                        <span class='element-symbol sm-sym'>Alka
+                        </span>
+                    </span>
+                    <h3>Akalinity</h3>
+                    <p>Nullam mo  arcu ac molestie scelerisqu vulputate molestie mpus ipsum.</p>
+                </div>
+                <div class="col-md-4 col-sm-4 test">
+                    <span class='chem-element'>
+                        <span class='element-symbol sm-sym'>EColi
+                        </span>
+                    </span>
+                    <h3>Bacteria (E Coli)</h3>
+                    <p><strong>1-234-567-890 - </strong> Plestie scelerisqu vulputate molestie ligula gravida .</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-4 test">
+                    <span class='chem-element'>
+                        <span class='element-symbol'>
+                        Cl<sup>-</sup>
+                        </span>
+                    </span>
+                    <h3>Chloride</h3>
+                    <p>Nullam mo  arcu ac molestie scelerisqu vulputate molestie mpus ipsum.</p>
+                </div>
+                <div class="col-md-4 col-sm-4 test">
+                    <span class='chem-element'>
+                        <span class='element-symbol'>
+                        Cu
+                        </span>
+                        <span class='element-num'>29</span>
+                    </span>
+                    <h3>Copper</h3>
+                    <p>Nullam mo  arcu ac molestie scelerisqu vulputate molestie mpus ipsum.</p>
+                </div>
+                <div class="col-md-4 col-sm-4 test">
+                    <span class='chem-element'>
+                        <span class='element-symbol'>F<sup>-</sup>
+                        </span>
+                    </span>
+                    <h3>Flouride</h3>
+                    <p><strong>1-234-567-890 - </strong> Plestie scelerisqu vulputate molestie ligula gravida .</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-4 test">
+                    <span class='chem-element'>
+                        <span class='element-symbol sm-sym'>Hard
+                        </span>
+                    </span>
+                    <h3>Hardness</h3>
+                    <p>Nullam mo  arcu ac molestie scelerisqu vulputate molestie mpus ipsum.</p>
+                </div>
+                <div class="col-md-4 col-sm-4 test">
+                    <span class='chem-element'>
+                        <span class='element-symbol'>
+                        Fe
+                        </span>
+                        <span class='element-num'>26</span>
+                    </span>
+                    <h3>Iron</h3>
+                    <p>Nullam mo  arcu ac molestie scelerisqu vulputate molestie mpus ipsum.</p>
+                </div>
+                <div class="col-md-4 col-sm-4 test">
+                    <span class='chem-element'>
+                        <span class='element-symbol'>
+                        Mn
+                        </span>
+                        <span class='element-num'>25</span>
+                    </span>
+                    <h3>Manganese</h3>
+                    <p><strong>1-234-567-890 - </strong> Plestie scelerisqu vulputate molestie ligula gravida .</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-4 test">
+                    <span class='chem-element'>
+                        <span class='element-symbol'>
+                        Mg
+                        </span>
+                        <span class='element-num'>12</span>
+                    </span>
+                    <h3>Magnesium</h3>
+                    <p>Nullam mo  arcu ac molestie scelerisqu vulputate molestie mpus ipsum.</p>
+                </div>
+                <div class="col-md-4 col-sm-4 test">
+                    <span class='chem-element'>
+                        <span class='element-symbol sm-sym'>Pest
+                        </span>
+                    </span>
+                    <h3>Pesticides</h3>
+                    <p>Nullam mo  arcu ac molestie scelerisqu vulputate molestie mpus ipsum.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!--End Features -->
+
+
+<section id="contact" class="contact front-footer">
+    <div class="container">
+        <div class="row m-b-lg">
+            <div class="col-lg-12 text-center">
+                <div class="navy-line"></div>
+                <h1>xxxxxx water</h1>
+            </div>
+        </div>
+        <div class="row m-b-lg">
+            <div class="col-lg-3 col-lg-offset-3">
+                <address>
+                    <strong><span class="navy">xxxxxx, Inc.</span></strong><br/>
+                    Chicago, IL<br/>
+                    <!-- <abbr title="Phone">P:</abbr> (123) 456-7890 -->
+                </address>
+            </div>
+            <div class="col-lg-4">
+                <p class="text-color">
+                    Baldur Healthcare is dedicated to providing the best healthcare compliance software possible. Reach out to us with any questions and we will be happy to answer!
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <a href="{% url 'contact' %}" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
+                <p><strong>&copy; 2015 Baldur Healthcare</strong><br/></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mainly scripts -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <script type="text/javascript">
+
+
+    // --------------------------------------------------------
+    //  Smooth Scrolling
+    // --------------------------------------------------------     
+    $(".navbar-nav li a[href^='#']").on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $(this.hash).offset().top
+        }, 1000);
+    });
+
+    // Activate WOW.js plugin for animation on scrol
+    new WOW().init();
+
+    </script>
+
+</body>
+</html>
+
+
+
