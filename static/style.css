@@ -44,6 +44,10 @@ background-image: -ms-linear-gradient(left, rgb(6, 138, 226) 11%, rgb(50, 173, 2
     color: white;
 }
 
+.btn-order{
+    width: 50%;
+}
+
 .gray-line{
     width: 200px;
     height: 2px;
@@ -154,9 +158,13 @@ background-image: -ms-linear-gradient(left, rgb(6, 138, 226) 11%, rgb(50, 173, 2
     color: #D2D2D2;
 }
 
+.package-features{
+    padding-bottom: 30px;
+}
+
 .package-active{
     font-weight: bold;
-    color: green;
+    color: #337AB7;
 }
 
 ul li {
