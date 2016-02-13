@@ -17,12 +17,19 @@ body{
 }
 
 .front-header{
-    height: 400px!important;
-    background-color: #f6f6f6;
+    height: 600px!important;
+    /*background-color: #47A6F7;*/
+background-image: linear-gradient(90deg, rgb(6, 138, 226) 11%, rgb(50, 173, 255) 100%);
+background-image: -moz-linear-gradient(left, rgb(6, 138, 226) 11%, rgb(50, 173, 255) 100%);
+background-image: -webkit-linear-gradient(left, rgb(6, 138, 226) 11%, rgb(50, 173, 255) 100%);
+background-image: -o-linear-gradient(left, rgb(6, 138, 226) 11%, rgb(50, 173, 255) 100%);
+background-image: -ms-linear-gradient(left, rgb(6, 138, 226) 11%, rgb(50, 173, 255) 100%);
+    font-weight: bold;
 }
 
 .head-text{
-    padding-top: 100px;
+    padding-top: 230px;
+    color: white;
 }
 
 .front-footer{
@@ -31,9 +38,35 @@ body{
     color:#ADADAD;
 }
 
+.btn-footer{
+    background: #272727;
+    border: 1px solid white;
+    color: white;
+}
+
+.gray-line{
+    width: 200px;
+    height: 2px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 60px auto 0;
+    border-bottom: 2px solid #1ab394;
+}
+
+
+.btn-footer:hover{
+    background: #272727;
+    border: 1px solid white;
+    color: white;
+}
+
 .navbar-custom{
     height: 80px;
     background-color: #FFFFFF;
+}
+
+.nav>li>a:focus, .nav>li>a:hover{
+    background: inherit;
 }
 
 .signin-label{
@@ -43,11 +76,6 @@ body{
     border: 0px !important;
 }
 
-.signin-label:hover{
-    background-color: #1AB394 !important;
-    color: inherit !important;
-    border: 0px !important;
-}
 
 .navbar-dropdown{
     color: #676a6c!important;
@@ -77,7 +105,7 @@ body{
 }
 
 .product-outline:hover{
-    outline: 1px solid #1AB394;
+    outline: 1px solid #0B8EE5;
 }
 
 #benefits-row h1{
@@ -234,3 +262,11 @@ ul li {
     color: #43A8FF;
     border-color: #43A8FF;
 }
+
+.state-img{
+    width: 60px;
+    float: left;
+    padding: 0px 15px;
+    opacity: .6;
+}
+
