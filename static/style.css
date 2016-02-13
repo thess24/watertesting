@@ -1,0 +1,227 @@
+section{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+body{
+    font-family: "Open Sans", "Raleway", Lucida Sans Unicode, Verdana, Helvetica, sans-serif;
+/*    font-size: 14px;
+    line-height: 23px;
+    color: #7a7a7a;
+    -webkit-font-smoothing: antialiased;*/
+
+}
+
+.front-header{
+    height: 400px!important;
+    background-color: #f6f6f6;
+}
+
+.head-text{
+    padding-top: 100px;
+}
+
+.front-footer{
+    background:#272727;
+    margin-top:250px!important;
+    color:#ADADAD;
+
+}
+
+.signin-label{
+    padding: 10px !important;
+    margin: 21px 0px 0px 21px;
+    background-color: #1AB394;
+    border: 0px !important;
+}
+
+.signin-label:hover{
+    background-color: #1AB394 !important;
+    color: inherit !important;
+    border: 0px !important;
+}
+
+.navbar-dropdown{
+    color: #676a6c!important;
+}
+
+.p-lg-text{
+    font-size: 1.5em!important;
+    font-weight: 300!important;
+}
+
+.product-outline{
+    outline: 1px solid #E8E8E8;
+    outline-offset: -8px;
+    padding: 15px 30px;
+    text-align: center;
+    -webkit-transition: outline 0.7s ease;
+     -moz-transition: outline 0.7s ease;
+       -o-transition: outline 0.7s ease;
+      -ms-transition: outline 0.7s ease;
+          transition: outline 0.7s ease; 
+}
+
+.product-outline i{
+    display: block;
+    font-size: 8em;
+}
+
+.product-outline:hover{
+    outline: 1px solid #1AB394;
+}
+
+#benefits-row h1{
+    text-align: center;
+}
+
+#benefit-main{
+    font-weight: bold;
+    margin-bottom: 45px;
+}
+
+.packages {
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.packages .package {
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    padding: 30px 0;
+    background: white;
+}
+
+.packages .package .package-price {
+    font-size: 30px;
+    font-weight: 300;
+    display: block;
+}
+
+.underline-small {
+    border-top: 2px solid #0099e6;
+}
+.underline-small {
+    display: inline-block;
+    width: 160px;
+    margin: 0 auto;
+    height: 1px;
+}
+
+.packages .package .package-features ul li {
+    margin: 8px 0;
+}
+
+.packages .package .package-features ul {
+    padding-left: 0px;
+    color: #D2D2D2;
+}
+
+.package-active{
+    font-weight: bold;
+    color: green;
+}
+
+ul li {
+    list-style: none;
+}
+
+.circlenum{
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 3em;
+    padding: 15px;
+}
+
+.workstep{
+    padding:60px 0px;
+}
+
+.workstep-text{
+    padding-left: 50px;
+    padding-right: 70px;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid #e1e1e1;
+}
+
+
+.whytestwater h2{
+    text-align: center;
+    font-size: 1.4em;
+    color: #43A8FF;
+    font-weight: bold;
+}
+
+.test {
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.test i {
+    float: left;
+    margin-right: 20px;
+}
+
+.test h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+
+.chem-element{
+    width: 40px;
+    height: 40px;
+    font-size: 1.1em;
+    font-weight: bold;
+    display: inline-block;
+    font-family: monospace;
+    border: solid 2px black;
+    position:relative;
+    float: left;
+    margin-right: 30px;
+}
+
+.chem-icon{
+    font-size: 1.1em;
+    display: inline-block;
+    float: left;
+    margin-right: 30px;
+}
+
+.element-num{
+    position: absolute;
+    font-size: .6em;
+    right: 3px;
+}
+
+.element-symbol{
+    bottom: 0px;
+    position: absolute;
+    /*font-size: 1.3em;*/
+    left: 2px;
+}
+
+.sm-sym{
+    font-size: .7em;
+}
+
+.section-head{
+    padding-bottom: 90px;
+}
+
+.section-head h1{
+    font-weight: bold;
+}
+
+.blue{
+    color: #43A8FF;
+    border-color: #43A8FF;
+}
