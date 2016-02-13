@@ -12,6 +12,10 @@ body{
 
 }
 
+.logo-font{
+    font-family: 'Montserrat', sans-serif!important;
+}
+
 .front-header{
     height: 400px!important;
     background-color: #f6f6f6;
@@ -25,7 +29,11 @@ body{
     background:#272727;
     margin-top:250px!important;
     color:#ADADAD;
+}
 
+.navbar-custom{
+    height: 80px;
+    background-color: #FFFFFF;
 }
 
 .signin-label{
