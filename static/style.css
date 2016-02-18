@@ -17,7 +17,7 @@ body{
 }
 
 .front-header{
-    height: 600px!important;
+    height: 550px!important;
     /*background-color: #47A6F7;*/
 background-image: linear-gradient(90deg, rgb(6, 138, 226) 11%, rgb(50, 173, 255) 100%);
 background-image: -moz-linear-gradient(left, rgb(6, 138, 226) 11%, rgb(50, 173, 255) 100%);
@@ -28,7 +28,7 @@ background-image: -ms-linear-gradient(left, rgb(6, 138, 226) 11%, rgb(50, 173, 2
 }
 
 .head-text{
-    padding-top: 230px;
+    padding-top: 200px;
     color: white;
 }
 
@@ -314,4 +314,17 @@ background-image: -ms-linear-gradient(left, rgb(6, 146, 240) 4%, rgb(136, 207, 2
 .media-heading{
     font-size: 30px;
     color: #337AB7;
+}
+
+
+.why-test-list{
+    font-weight: normal;
+    padding-top: 5px;
+}
+
+.why-test-list li{
+    margin-top: 10px;
+    list-style: disc;
+    font-size: 1.1em;
+
 }
