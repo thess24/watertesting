@@ -328,3 +328,43 @@ background-image: -ms-linear-gradient(left, rgb(6, 146, 240) 4%, rgb(136, 207, 2
     font-size: 1.1em;
 
 }
+
+
+
+
+
+
+/*dashboard*/
+.fa-check-circle{
+    color: green;
+}
+
+.fa-times{
+    color: red;
+}
+
+.test-area-overall{
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.test-score-overall{
+
+}
+
+.test-area{
+    padding-top: 20px;
+
+}
+
+.test-name{
+    font-size: 1.5em;
+}
+
+.test-score{
+
+}
+
+.test-explained{
+
+}
