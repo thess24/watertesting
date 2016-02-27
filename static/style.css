@@ -17,13 +17,12 @@ body{
 }
 
 .front-header{
-    height: 550px!important;
-    /*background-color: #47A6F7;*/
-background-image: linear-gradient(90deg, rgb(6, 138, 226) 11%, rgb(50, 173, 255) 100%);
-background-image: -moz-linear-gradient(left, rgb(6, 138, 226) 11%, rgb(50, 173, 255) 100%);
-background-image: -webkit-linear-gradient(left, rgb(6, 138, 226) 11%, rgb(50, 173, 255) 100%);
-background-image: -o-linear-gradient(left, rgb(6, 138, 226) 11%, rgb(50, 173, 255) 100%);
-background-image: -ms-linear-gradient(left, rgb(6, 138, 226) 11%, rgb(50, 173, 255) 100%);
+    min-height: 550px!important;
+    background-image: linear-gradient(90deg, rgb(6, 138, 226) 11%, rgb(50, 173, 255) 100%);
+    background-image: -moz-linear-gradient(left, rgb(6, 138, 226) 11%, rgb(50, 173, 255) 100%);
+    background-image: -webkit-linear-gradient(left, rgb(6, 138, 226) 11%, rgb(50, 173, 255) 100%);
+    background-image: -o-linear-gradient(left, rgb(6, 138, 226) 11%, rgb(50, 173, 255) 100%);
+    background-image: -ms-linear-gradient(left, rgb(6, 138, 226) 11%, rgb(50, 173, 255) 100%);
     font-weight: bold;
 }
 
@@ -301,6 +300,31 @@ ul li {
 .icon-col span{
     font-size: 8em;
 }
+
+
+@media only screen and (max-device-width: 760px) {
+  .icon-col span{ 
+    display:none;
+  }
+}
+
+
+@media only screen and (max-device-width: 450px) {
+    #product-img{
+        width:100%;
+        padding-top:10px!important;
+    }
+    .head-text{
+        padding-top: 30px!important;
+    }
+}
+
+
+#product-img{
+    padding-top:150px;
+}
+
+
 /*.section-bottom-bar{
 background-image: linear-gradient(90deg, rgb(6, 146, 240) 4%, rgb(136, 207, 255) 100%);
 background-image: -moz-linear-gradient(left, rgb(6, 146, 240) 4%, rgb(136, 207, 255) 100%);
